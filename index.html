@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - FUNCIONANDO</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg"></div>
+    <h1>Clima</h1>
+
+    <form class="search">
+        <input type="search" id="research_field" />
+        <button>Buscar</button>
+    </form>
+
+    <div class="result_area"> <!--Essa div é responsável por mostrar as informações do resultado da temporatura de determinada localidade-->
+        <div class="title">--</div>
+
+        <div class="info"> <!--DIV que mostra a temperatura da cidade-->
+            <div class="temp">
+                <div class="tempTitle">Temperatura</div>
+                <div class="tempInfo">--</div>
+                <img/>
+            </div>
+            <div class="wind"> <!--DIV que mostra a velocidade do vento-->
+                <div class="windTitle">Vento</div>
+                <div class="ventoInfo">--</div>
+                <div class="windArea">
+                    <div class="windDirection" style="transform: rotate(0deg)"></div> <!--DIV que mostra a direção do vento-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="warning_message"></div> <!--DIV que mostrará a imagem de aviso dizendo que não foi encontrado nenhuma temperatura para aquela determinada cidade, caso o usuário tenha digitado algo de errado que não seja nome de cidade válidos-->
+
+    <footer>Powered by Luiz Reis</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
